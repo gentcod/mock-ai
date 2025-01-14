@@ -6,7 +6,7 @@ A Node.js backend service that simulates performing sentiment analysis on text i
 
 - RESTful API endpoints for text analysis and result retrieval
 - Mock sentiment analysis service
-- SQLite database storage
+- In-memory SQLite database storage
 - Docker support
 - Unit tests
 - Input validation
