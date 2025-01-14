@@ -26,6 +26,10 @@ export class SentimentService {
       return Math.ceil(Math.max(0, Math.min(1, score)) * 100) / 100;
    }
 
+   public testScore(text: string) {
+      return this._getScore(text);
+   }
+
    public async analyze(email: string, text: string) {
       const data: IAnalysis = {
          user_email: email,
@@ -78,7 +82,7 @@ export class SentimentService {
       const response = result.map(el => AnalysisResModel.createResponse(el));
       return {
          status: 200,
-         message: 'Sentiment results fetch successfully.',
+         message: 'Sentiment result(s) fetch successfully.',
          data: response,
       }
    }

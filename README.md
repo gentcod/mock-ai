@@ -116,7 +116,7 @@ Retrieve single analysis result.
 {
   "status": "success",
   "responseCode": 200,
-  "message": "Sentiment result fetch successfully.",
+  "message": "Sentiment result(s) fetch successfully.",
   "data": {
     "id": 2,
     "text": "hello there, good man",
