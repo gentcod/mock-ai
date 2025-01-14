@@ -31,12 +31,11 @@ npm install
 3. Create a `.env` file and add following environmental variables:
 
 ```
-   PORT=5000
-   DB_STRING=somestring.db
-   NODE_ENV=
-   JWTPRIVATEKEY=
-   JWTXPIRATION=
-   SENTIMENT_BOUND=30
+   PORT= # Port address to run your api. E.g 5000. 
+   DB_STRING=somestring.db # SQLite database file. It is optional and should be used when you want to persist the database.
+   NODE_ENV= # To specify the application environment. E.g development
+   JWTPRIVATEKEY= # random key string to be used for creation and validaton of tokens.
+   JWTXPIRATION= # time span before token expiration. E.g 1h
 ```
 
 4. Start the server:
