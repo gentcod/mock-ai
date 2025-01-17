@@ -71,7 +71,7 @@ export class SentimentService {
 
       return {
          status: 200,
-         message: 'Sentiment result fetch successfully.',
+         message: 'Sentiment result fetched successfully.',
          data: response,
       }
    }
@@ -82,7 +82,7 @@ export class SentimentService {
       const response = result.map(el => AnalysisResModel.createResponse(el));
       return {
          status: 200,
-         message: 'Sentiment result(s) fetch successfully.',
+         message: 'Sentiment result(s) fetched successfully.',
          data: response,
       }
    }
